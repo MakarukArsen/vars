@@ -18,11 +18,10 @@ bananas = Math.floor(bananas);
 console.log(potatos + tomatos + bananas);
 
 // Виведіть суму товарів округлену до сотень.
-console.log(Math.ceil(summ / 100) * 100);
+console.log(Math.round(summ / 100) * 100);
 
 // Виведіть булеве значення: чи є сума всіх товарів парним чи непарним числом?
-// Не зрозумів це питання!!!
-console.log(Boolean(summ));
+console.log(Math.ceil(summ / 100) * 100 % 2 === 0 ? "true" : "false");
 
 // Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.
 console.log(500 - summ);
@@ -46,7 +45,7 @@ console.log("Мінімальна ціна: " + Math.min(potatos, tomatos, banan
 console.log("Вартість всіх товарів: " + summ);
 console.log("Вартість товарів без копійок: " + Math.floor(summ));
 console.log("Сумма товарів округлена до сотні: " + Math.ceil(summ / 100) * 100);
-console.log("Завдання з булевим значенням не зрозумів!");
+console.log("Сума всіх товарів парним числом: " + (Math.ceil((summ / 100) * 100) % 2 === 0 ? "true" : "false"));
 console.log("Решта без округлення: " + (500 - summ));
 console.log("Середнє значення цін, округлене до другого знаку після коми: " + Math.round((summ * 100)) / 100);
 console.log("Знижка: " + discount);
