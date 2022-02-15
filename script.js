@@ -12,29 +12,26 @@ let summ = potatos + tomatos + bananas;
 console.log(summ);
 
 // Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою. Округлення використовувати в МЕНЬШУ сторону.
-potatos = Math.floor(potatos);
-tomatos = Math.floor(tomatos);
-bananas = Math.floor(bananas);
-console.log(potatos + tomatos + bananas);
+console.log(Math.floor(potatos) + Math.floor(tomatos) + Math.floor(bananas));
 
 // Виведіть суму товарів округлену до сотень.
 console.log(Math.round(summ / 100) * 100);
 
 // Виведіть булеве значення: чи є сума всіх товарів парним чи непарним числом?
-console.log(Math.ceil(summ / 100) * 100 % 2 === 0 ? "true" : "false");
+console.log(Math.round(summ / 100) * 100 % 2 === 0 ? "true" : "false");
 
 // Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.
 console.log(500 - summ);
 
 // Виведіть середнє значення цін, округлене до другого знаку після коми
-console.log(Math.round((summ * 100)) / 100);
+console.log(Math.round(summ / 3).toFixed(2));
 
 // Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
-let discount = Math.floor(Math.random() * 100);
+let discount = Math.round(Math.random() * 100);
 console.log(discount);
 
 // Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.
-console.log(Math.floor((summ - discount) * 100) / 100);
+console.log(Math.floor(summ - discount).toFixed(2));
 
 // Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни?
 console.log(Math.floor((summ / 2) - discount));
