@@ -24,7 +24,7 @@ console.log(Math.round(summ / 100) * 100 % 2 === 0 ? "true" : "false");
 console.log(500 - summ);
 
 // Виведіть середнє значення цін, округлене до другого знаку після коми
-console.log(Math.round(summ / 3).toFixed(2));
+console.log((summ / 3).toFixed(2));
 
 // Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
 let discount = Math.round(Math.random() * 100);
@@ -44,7 +44,7 @@ console.log("Вартість товарів без копійок: " + Math.flo
 console.log("Сумма товарів округлена до сотні: " + Math.ceil(summ / 100) * 100);
 console.log("Сума всіх товарів парним числом: " + (Math.ceil((summ / 100) * 100) % 2 === 0 ? "true" : "false"));
 console.log("Решта без округлення: " + (500 - summ));
-console.log("Середнє значення цін, округлене до другого знаку після коми: " + Math.round((summ * 100)) / 100);
+console.log("Середнє значення цін, округлене до другого знаку після коми: " + (summ / 3).toFixed(2));
 console.log("Знижка: " + discount);
 console.log("Решта після знижки: " + Math.floor((summ - discount) * 100) / 100)
 console.log("Чистий прибуток: " + Math.floor((summ / 2) - discount)); 
