@@ -18,7 +18,7 @@ console.log(Math.floor(potatos) + Math.floor(tomatos) + Math.floor(bananas));
 console.log(Math.round(summ / 100) * 100);
 
 // Виведіть булеве значення: чи є сума всіх товарів парним чи непарним числом?
-console.log(Math.floor(summ / 100) * 100 % 2 === 0 ? "true" : "false");
+console.log(Math.floor((summ / 100) * 100) % 2 === 0 ? "true" : "false");
 
 // Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.
 console.log(500 - summ);
@@ -42,7 +42,7 @@ console.log("Мінімальна ціна: " + Math.min(potatos, tomatos, banan
 console.log("Вартість всіх товарів: " + summ);
 console.log("Вартість товарів без копійок: " + (Math.floor(potatos) + Math.floor(tomatos) + Math.floor(bananas)));
 console.log("Сумма товарів округлена до сотні: " + (Math.round(summ / 100) * 100));
-console.log("Сума всіх товарів парним числом: " + (Math.ceil((summ / 100) * 100) % 2 === 0 ? "true" : "false"));
+console.log("Сума всіх товарів парним числом: " + (Math.floor((summ / 100) * 100) % 2 === 0 ? "true" : "false"));
 console.log("Решта без округлення: " + (500 - summ));
 console.log("Середнє значення цін, округлене до другого знаку після коми: " + (summ / 3).toFixed(2));
 console.log("Знижка: " + discount);
