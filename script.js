@@ -1,14 +1,14 @@
 // Об'явлення перемінних
-let potatos = 15.678;
-let tomatos = 123.965;
-let bananas = 90.2345;
+const potatos = 15.678;
+const tomatos = 123.965;
+const bananas = 90.2345;
 
 // виведіть максимальне, мінімальне число 
 console.log(Math.max(potatos, tomatos, bananas));
 console.log(Math.min(potatos, tomatos, bananas));
 
 // Складіть вартість всіх товарів, помістіть її в змінну та виведіть цю суму
-let summ = potatos + tomatos + bananas;
+const summ = potatos + tomatos + bananas;
 console.log(summ);
 
 // Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою. Округлення використовувати в МЕНЬШУ сторону.
@@ -27,7 +27,7 @@ console.log(500 - summ);
 console.log((summ / 3).toFixed(2));
 
 // Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
-let discount = Math.round(Math.random() * 100);
+const discount = Math.round(Math.random() * 100);
 console.log(discount);
 
 // Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.
