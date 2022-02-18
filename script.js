@@ -32,7 +32,7 @@ const discount = Math.round(Math.random() * 100);
 const restWithDiscount = Math.round((summ - discount) * 100) / 100;
 
 // Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни?
-const profit = Math.floor((summ / 2) - discount);
+const profit = Math.floor((summ / 2) - restWithDiscount);
 
 //Advanced. Створіть шаблонний рядок та виведіть всі обчислення вчинені в Base частині домашнього завдання у вигляді одного рядка
 console.log("Максимальна ціна: " + maxPrice);
